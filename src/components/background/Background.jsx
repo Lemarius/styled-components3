@@ -9,7 +9,8 @@ import {
 	StyledTextCont
 } from './styles';
 
-const Background = ({ name, cardNumber, month, year, cvc }) => {
+const Background = ({ cardData }) => {
+	const { name, cardNumber, month, year, cvc } = cardData;
 	return (
 		<>
 			<StyledBackground>
